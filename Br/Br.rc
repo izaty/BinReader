@@ -1,0 +1,776 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\Br.rc2""  // Microsoft Visual C++ 以外で編集されたリソース\r\n"
+    "#include ""afxres.rc""         // 標準コンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Br.ico"
+IDR_BrTYPE              ICON                    "res\\BrDoc.ico"
+IDI_LOOP                ICON                    "res\\ico00001.ico"
+IDI_DATA                ICON                    "res\\square1.ico"
+IDI_ROOT                ICON                    "res\\loop1.ico"
+IDI_LOOP1               ICON                    "res\\ico00002.ico"
+IDI_LOOP2               ICON                    "res\\loop2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar24bit.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  24, 24
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_ADD_DATA
+    BUTTON      ID_ADD_LOOP
+    SEPARATOR
+    BUTTON      ID_MOV_UP
+    BUTTON      ID_MOV_DOWN
+    BUTTON      ID_MOV_LEFT
+    BUTTON      ID_MOV_RIGHT
+    BUTTON      ID_DEL_NODE
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_SAVE_SRC
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "新規作成\tCtrl+N(&N)",            ID_FILE_NEW
+        MENUITEM "開く...\tCtrl+O(&O)",           ID_FILE_OPEN
+        MENUITEM "上書き保存\tCtrl+S(&S)",           ID_FILE_SAVE
+        MENUITEM "名前を付けて保存(&A)...",             ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近使ったファイル",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "アプリケーションの終了(&X)",             ID_APP_EXIT
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "元に戻す(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "データを追加(&A)...\tCtrl+D",       ID_ADD_DATA
+        MENUITEM "ループを追加(&L)...\tCtrl+L",       ID_ADD_LOOP
+        MENUITEM SEPARATOR
+        MENUITEM "削除(&D)\tDelete",              ID_DEL_NODE
+        MENUITEM SEPARATOR
+        MENUITEM "左へ(&E)...\tCtrl+←",           ID_MOV_LEFT
+        MENUITEM "右へ(&R)...\tCtrl+→",           ID_MOV_RIGHT
+        MENUITEM "上へ(&P)...\tCtrl+↑",           ID_MOV_UP
+        MENUITEM "下へ(&W)...\tCtrl+↓",           ID_MOV_DOWN
+        MENUITEM SEPARATOR
+        MENUITEM "プロパティ(&Y)...",                ID_EDIT_PROP
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "ツール バー(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "ステータス バー(&S)",                ID_VIEW_STATUS_BAR
+        MENUITEM "分割(&P)",                      ID_WINDOW_SPLIT
+    END
+    POPUP "ソース(&S)"
+    BEGIN
+        MENUITEM "ソースの出力(&S)...",               ID_SAVE_SRC
+    END
+    POPUP "ツール(&T)"
+    BEGIN
+        MENUITEM "オプション(&O)...",                ID_SRC_OPTIONS
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "目次(&C)...",                   ID_HELP_INDEX
+        MENUITEM "検索(&S)...",                   ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "ライセンスキーの登録(&L)...",           ID_SET_LICENSE
+        MENUITEM SEPARATOR
+        MENUITEM "バージョン情報(&A)...",              ID_APP_ABOUT
+    END
+END
+
+IDR_TREE_CONTEXT MENU 
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "データを追加(&T)...",               ID_ADD_DATA
+        MENUITEM "ループを追加(&L)...",               ID_ADD_LOOP
+        MENUITEM SEPARATOR
+        MENUITEM "編集(&P)...",                   ID_EDIT_PROP
+        MENUITEM SEPARATOR
+        MENUITEM "削除(&D)",                      ID_DEL_NODE
+        MENUITEM SEPARATOR
+        MENUITEM "左へ(&E)...",                   ID_MOV_LEFT
+        MENUITEM "右へ(&R)...",                   ID_MOV_RIGHT
+        MENUITEM "上へ(&U)...",                   ID_MOV_UP
+        MENUITEM "下へ(&W)...",                   ID_MOV_DOWN
+    END
+END
+
+IDR_EDIT_CONTEXT MENU 
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "コピー(&C)...\tCtrl+C",          ID_EDIT_COPY
+        MENUITEM "すべて選択(&A)\tCtrl+A",           ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "フォント(&F)...",                 ID_EDIT_FONT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "D",            ID_ADD_DATA,            VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_ADD_LOOP,            VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_DEL_NODE,            VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_MOV_DOWN,            VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_MOV_LEFT,            VIRTKEY, CONTROL, NOINVERT
+    VK_RIGHT,       ID_MOV_RIGHT,           VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          ID_MOV_UP,              VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "バージョン情報"
+FONT 9, "MS UI Gothic", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,21
+    LTEXT           "BinReader Version 1.0",IDC_STATIC,40,15,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016 wagner116th All Rights Reserved.",IDC_STATIC,40,30,165,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_ADD_DATA DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "データの追加"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "データ",IDC_STATIC,7,7,172,60
+    LTEXT           "型(&T):",IDC_STATIC,17,24,26,8
+    COMBOBOX        IDC_TYPE,61,22,105,140,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "変数名(&V):",IDC_STATIC,17,44,41,8
+    EDITTEXT        IDC_VARIABLE,63,42,104,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,69,74,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,129,74,50,14
+END
+
+IDD_ADD_LOOP DIALOGEX 0, 0, 186, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ループの追加"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "ループ",-1,7,7,172,41
+    LTEXT           "上限値(&V):",-1,18,23,41,8
+    EDITTEXT        IDC_VARIABLE,64,20,104,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,69,54,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,129,54,50,14
+END
+
+IDD_SRC_OPTIONS DIALOGEX 0, 0, 352, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "オプション"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "言語",IDC_STATIC,6,6,59,90
+    CONTROL         "C言語",IDC_LANG_C,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,18,37,10
+    CONTROL         "C++",IDC_LANG_CPL,"Button",BS_AUTORADIOBUTTON,18,30,31,10
+    CONTROL         "C#",IDC_LANG_CSH,"Button",BS_AUTORADIOBUTTON,18,42,26,10
+    CONTROL         "Java",IDC_LANG_JAVA,"Button",BS_AUTORADIOBUTTON,18,54,31,10
+    CONTROL         "PHP",IDC_LANG_PHP,"Button",BS_AUTORADIOBUTTON,18,66,29,10
+    DEFPUSHBUTTON   "OK",IDOK,225,110,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,285,110,50,14
+    GROUPBOX        "インデント",IDC_STATIC,70,5,110,35
+    GROUPBOX        "ループ変数",IDC_STATIC,186,6,156,54
+    LTEXT           "型:",IDC_STATIC,198,20,12,8
+    COMBOBOX        IDC_LOOP_TYPE,234,18,102,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "変数名:",IDC_STATIC,198,38,28,8
+    COMBOBOX        IDC_LOOP_INDEX,234,36,102,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "テストドライバ",IDC_STATIC,70,45,110,35
+    CONTROL         "main関数を追加する",IDC_DRIVER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,60,81,10
+    GROUPBOX        "エンディアン変換",IDC_STATIC,185,65,156,35
+    CONTROL         "変換する",IDC_ENDIAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,195,80,45,10
+    COMBOBOX        IDC_END_TYPE,245,80,91,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_INDENT,78,18,96,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ruby",IDC_LANG_RUBY,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,18,78,33,10
+    COMBOBOX        IDC_NEWLINE,11,113,96,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "改行コード",IDC_NEWLINE_FR,5,100,108,30
+    GROUPBOX        "書込関数",IDC_STATIC,70,85,110,35
+    CONTROL         "書込関数を追加する",IDC_WRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,100,83,10
+END
+
+IDD_TOOLS_OPT_GEN DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "オプション"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "言語",IDC_STATIC,6,6,60,54
+    CONTROL         "C言語",IDC_LANG_C,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,18,37,10
+    CONTROL         "C++",IDC_LANG_CPL,"Button",BS_AUTORADIOBUTTON,18,30,31,10
+    CONTROL         "Java",IDC_LANG_JAVA,"Button",BS_AUTORADIOBUTTON,18,42,31,10
+    GROUPBOX        "インデント",IDC_STATIC,78,54,72,36
+    COMBOBOX        IDC_INDENT,84,66,60,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ループ変数",IDC_STATIC,78,96,114,54
+    LTEXT           "型:",IDC_STATIC,90,110,12,8
+    COMBOBOX        IDC_LOOP_TYPE,126,108,60,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "変数名:",IDC_STATIC,90,128,28,8
+    COMBOBOX        IDC_LOOP_INDEX,126,126,60,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "データ変数の宣言位置",IDC_STATIC,78,6,108,42
+    CONTROL         "ローカル変数",IDC_VAR_LOCAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,90,18,57,10
+    CONTROL         "外部変数（メンバ変数）",IDC_VAR_MEMBER,"Button",BS_AUTORADIOBUTTON,90,30,90,10
+END
+
+IDD_TOOLS_OPT_C DIALOGEX 0, 0, 136, 124
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "C言語"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "ループ変数",-1,6,54,114,54
+    LTEXT           "型:",-1,18,68,12,8
+    COMBOBOX        IDC_LOOP_TYPE,54,66,60,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "変数名:",-1,18,86,28,8
+    COMBOBOX        IDC_LOOP_INDEX,54,84,60,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "データ変数の宣言位置",-1,6,6,108,42
+    CONTROL         "ローカル変数",IDC_VAR_LOCAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,18,57,10
+    CONTROL         "外部変数",IDC_VAR_MEMBER,"Button",BS_AUTORADIOBUTTON,18,30,48,10
+END
+
+IDD_SET_LICENSE DIALOGEX 0, 0, 250, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ライセンスキーの登録"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "ライセンスキー",IDC_STATIC,10,35,233,47
+    EDITTEXT        IDC_VARIABLE,21,52,210,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登録",IDOK,125,95,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,185,95,50,14
+    CONTROL         "作者より発行されたライセンスキーを入力して\n[登録]ボタンをクリックしてください。",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,10,220,20
+END
+
+IDD_TRIAL_MESSAGE DIALOGEX 0, 0, 347, 234
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BinReader試用版"
+FONT 9, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "ライセンスキー",IDC_STATIC,5,140,233,47
+    EDITTEXT        IDC_VARIABLE,16,158,210,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "登録",IDOK,124,199,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,184,199,50,14
+    LTEXT           "スタティック",IDC_MESSAGE,15,15,240,115
+    GROUPBOX        "",IDC_STATIC,5,5,260,130
+END
+
+IDD_SRC_LANG DIALOGEX 0, 0, 242, 144
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "プログラミング言語の選択"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "言語",IDC_STATIC,10,25,79,90
+    CONTROL         "C言語",IDC_LANG_C,"Button",BS_AUTORADIOBUTTON | WS_GROUP,22,37,37,10
+    CONTROL         "C++",IDC_LANG_CPL,"Button",BS_AUTORADIOBUTTON,22,49,31,10
+    CONTROL         "C#",IDC_LANG_CSH,"Button",BS_AUTORADIOBUTTON,22,61,26,10
+    CONTROL         "Java",IDC_LANG_JAVA,"Button",BS_AUTORADIOBUTTON,22,73,31,10
+    CONTROL         "PHP",IDC_LANG_PHP,"Button",BS_AUTORADIOBUTTON,22,85,29,10
+    CONTROL         "Ruby",IDC_LANG_RUBY,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,22,97,33,10
+    DEFPUSHBUTTON   "OK",IDOK,185,10,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,185,30,50,14
+    CONTROL         "次回から表示しない",IDC_NODISP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,125,79,10
+    CONTROL         "使用するプログラミング言語を選択してください。",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,10,10,165,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "izaty"
+            VALUE "FileDescription", "BinReader"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "BinReader.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2016 wagner116th  All rights reserved."
+            VALUE "OriginalFilename", "BinReader.exe"
+            VALUE "ProductName", "BinReader"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ADD_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ADD_LOOP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_SRC_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_TOOLS_OPT_GEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_TOOLS_OPT_C, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 129
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_SET_LICENSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_TRIAL_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_SRC_LANG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TOOLS_OPT_GEN DLGINIT
+BEGIN
+    IDC_INDENT, 0x403, 10, 0
+0x5e83, 0x7583, 0x9531, 0x8eb6, 0x009a, 
+    IDC_INDENT, 0x403, 10, 0
+0x5e83, 0x7583, 0x9532, 0x8eb6, 0x009a, 
+    IDC_INDENT, 0x403, 10, 0
+0xf38b, 0x9294, 0x9534, 0x8eb6, 0x009a, 
+    IDC_INDENT, 0x403, 10, 0
+0xf38b, 0x9294, 0x9538, 0x8eb6, 0x009a, 
+    IDC_LOOP_TYPE, 0x403, 4, 0
+0x6e69, 0x0074, 
+    IDC_LOOP_TYPE, 0x403, 13, 0
+0x6f76, 0x616c, 0x6974, 0x656c, 0x6920, 0x746e, "\000" 
+    IDC_LOOP_TYPE, 0x403, 13, 0
+0x6572, 0x6967, 0x7473, 0x7265, 0x6920, 0x746e, "\000" 
+    IDC_LOOP_INDEX, 0x403, 15, 0
+0x3069, 0x202c, 0x3169, 0x202c, 0x3269, 0x2e20, 0x2e2e, "\000" 
+    IDC_LOOP_INDEX, 0x403, 12, 0
+0x2c69, 0x6a20, 0x202c, 0x206b, 0x2e2e, 0x002e, 
+    0
+END
+
+IDD_TOOLS_OPT_C DLGINIT
+BEGIN
+    IDC_LOOP_TYPE, 0x403, 4, 0
+0x6e69, 0x0074, 
+    IDC_LOOP_TYPE, 0x403, 13, 0
+0x6f76, 0x616c, 0x6974, 0x656c, 0x6920, 0x746e, "\000" 
+    IDC_LOOP_TYPE, 0x403, 13, 0
+0x6572, 0x6967, 0x7473, 0x7265, 0x6920, 0x746e, "\000" 
+    IDC_LOOP_INDEX, 0x403, 15, 0
+0x3069, 0x202c, 0x3169, 0x202c, 0x3269, 0x2e20, 0x2e2e, "\000" 
+    IDC_LOOP_INDEX, 0x403, 12, 0
+0x2c69, 0x6a20, 0x202c, 0x206b, 0x2e2e, 0x002e, 
+    0
+END
+
+IDD_SRC_OPTIONS DLGINIT
+BEGIN
+    IDC_LOOP_TYPE, 0x403, 4, 0
+0x6e69, 0x0074, 
+    IDC_LOOP_TYPE, 0x403, 13, 0
+0x6f76, 0x616c, 0x6974, 0x656c, 0x6920, 0x746e, "\000" 
+    IDC_LOOP_TYPE, 0x403, 13, 0
+0x6572, 0x6967, 0x7473, 0x7265, 0x6920, 0x746e, "\000" 
+    IDC_LOOP_INDEX, 0x403, 15, 0
+0x3069, 0x202c, 0x3169, 0x202c, 0x3269, 0x2e20, 0x2e2e, "\000" 
+    IDC_LOOP_INDEX, 0x403, 12, 0
+0x2c69, 0x6a20, 0x202c, 0x206b, 0x2e2e, 0x002e, 
+    IDC_LOOP_INDEX, 0x403, 22, 0
+0x6e49, 0x6564, 0x5f78, 0x2c69, 0x4920, 0x646e, 0x7865, 0x6a5f, 0x202c, 
+0x2e2e, 0x002e, 
+    IDC_END_TYPE, 0x403, 11, 0
+0x4942, 0x2047, 0x4e45, 0x4944, 0x4e41, "\000" 
+    IDC_END_TYPE, 0x403, 14, 0
+0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x004e, 
+    IDC_INDENT, 0x403, 10, 0
+0xf38b, 0x9294, 0x9534, 0x8eb6, 0x009a, 
+    IDC_INDENT, 0x403, 10, 0
+0xf38b, 0x9294, 0x9538, 0x8eb6, 0x009a, 
+    IDC_INDENT, 0x403, 10, 0
+0x5e83, 0x7583, 0x9531, 0x8eb6, 0x009a, 
+    IDC_INDENT, 0x403, 10, 0
+0x5e83, 0x7583, 0x9532, 0x8eb6, 0x009a, 
+    IDC_NEWLINE, 0x403, 17, 0
+0x464c, 0x2820, 0x694c, 0x756e, 0x2c78, 0x5520, 0x696e, 0x2978, "\000" 
+    IDC_NEWLINE, 0x403, 16, 0
+0x5243, 0x4c2b, 0x2046, 0x5728, 0x6e69, 0x6f64, 0x7377, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "BinReader\n\nBr\nBinary Format Files (*.bfm)\n.bfm\nBr.Document\nBr.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "BinReader"
+    AFX_IDS_IDLEMESSAGE     "レディ"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書き"
+    ID_INDICATOR_REC        "記録"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "新規にファイルを作成\n新規ファイル"
+    ID_FILE_OPEN            "既存のファイルを開く\n開く"
+    ID_FILE_CLOSE           "作業中のファイルを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のファイルを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のファイルを新しい名前で保存\n名前をつけて保存"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "プログラム情報、バージョン、著作権を表示します。\nバージョン情報"
+    ID_APP_EXIT             "アプリケーションを終了し、ファイルの保存を指示\\終了"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のファイルを開く"
+    ID_FILE_MRU_FILE2       "指定のファイルを開く"
+    ID_FILE_MRU_FILE3       "指定のファイルを開く"
+    ID_FILE_MRU_FILE4       "指定のファイルを開く"
+    ID_FILE_MRU_FILE5       "指定のファイルを開く"
+    ID_FILE_MRU_FILE6       "指定のファイルを開く"
+    ID_FILE_MRU_FILE7       "指定のファイルを開く"
+    ID_FILE_MRU_FILE8       "指定のファイルを開く"
+    ID_FILE_MRU_FILE9       "指定のファイルを開く"
+    ID_FILE_MRU_FILE10      "指定のファイルを開く"
+    ID_FILE_MRU_FILE11      "指定のファイルを開く"
+    ID_FILE_MRU_FILE12      "指定のファイルを開く"
+    ID_FILE_MRU_FILE13      "指定のファイルを開く"
+    ID_FILE_MRU_FILE14      "指定のファイルを開く"
+    ID_FILE_MRU_FILE15      "指定のファイルを開く"
+    ID_FILE_MRU_FILE16      "指定のファイルを開く"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "次のウィンドウに切り替える\n次のペイン"
+    ID_PREV_PANE            "前のウィンドウに切り替える\n前のペイン"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "作業中のウィンドウを分割\n分割"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をコピーしてクリップボードに保存\n保存"
+    ID_EDIT_CUT             "選択範囲を切り取ってクリップボードに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "クリップボードの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ファイル内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "取り消した操作をやり直す\nやり直す"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "ツール バーの 表示/非表示\nツール バーの表示切り替え"
+    ID_VIEW_STATUS_BAR      "ステータス バーの 表示/非表示\nステータス バーの表示切り替え"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "ウィンドウのサイズを変更"
+    AFX_IDS_SCMOVE          "ウィンドウの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ウィンドウを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ウィンドウを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のウィンドウに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のウィンドウに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のウィンドウを閉じ、変更したファイルの保存を指示"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "ウィンドウを通常のサイズに戻す"
+    AFX_IDS_SCTASKLIST      "タスク一覧をアクティブにする"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADD_DATA            "データの追加"
+    IDS_MOD_DATA            "データの編集"
+    IDS_ADD_LOOP            "ループの追加"
+    IDS_MOD_LOOP            "ループの編集"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TREE_ROOT           "<ルート>"
+    IDS_DECL_MEM            "メンバ変数"
+    IDS_DECL_EXT            "外部変数"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_DUP_VAR         "指定した変数名はすでに使用されています。別の変数名を指定してください。"
+    IDS_ERR_INVALID_VAR     "変数名が不適切です。"
+    IDS_ERR_OUT_SRC         "ソースの保存に失敗しました。"
+    IDS_ERR_VAR_SIZE        "変数名は30文字以内にしてください。"
+    IDS_ERR_VAR_EMPTY       "変数名を指定してください。"
+    IDS_ERR_VAR_RESERVED    "指定した変数名は、ループ変数用に予約されています。\n別の変数名を指定してください。"
+    IDS_ERR_INVALID_KEY     "正しいライセンスキーを入力してください。"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ADD_DATA             "データ（変数）を追加します。"
+    ID_ADD_LOOP             "ループを追加します。"
+    ID_DEL_NODE             "選択したアイテムを削除します。"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MOV_RIGHT            "選択したアイテムを右に移動します。"
+    ID_MOV_UP               "選択したアイテムを上に移動します。"
+    ID_MOV_LEFT             "選択したアイテムを左に移動します。"
+    ID_MOV_DOWN             "選択したアイテムを下に移動します。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_QST_SAVE_MOD        "変更を保存しますか？"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_FONT            "ソースコード表示のフォントを変更する\nフォントの変更"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INF_VALID_KEY       "ライセンスキーが登録されました。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TRIAL_MESSAGE       "BinReader試用版をご利用いただき誠にありがとうございます。\r\n\r\nBinReaderはシェアウェアです。すべての機能をご利用になるには、作者に送金してライセンスキーを取得する必要があります。\r\n複数名で利用される場合は、人数分の送金が必要になりますので、ご注意ください。試用版の機能制限は次の通りです。\r\n\r\n----------------------------------------------------------------------\r\n・生成されたソースコードのコピー・保存不可\r\n・フォーマットの設定の保存不可\r\n・ドライバ関数追加オプションの使用不可\r\n・書込関数追加オプションの使用不可\r\n・エンディアン変換オプションの使用不可\r\n・フォーマットに登録できるデータ、ループは６件まで\r\n----------------------------------------------------------------------"
+    IDS_TRIAL_VERSION       "BinReader試用版"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\Br.rc2"  // Microsoft Visual C++ 以外で編集されたリソース
+#include "afxres.rc"         // 標準コンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

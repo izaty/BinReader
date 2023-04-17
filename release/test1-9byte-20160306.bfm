@@ -1,0 +1,76 @@
+T 0 0 h1s
+T 0 0 magic
+T 0 0 h1e
+T 0 0 h2s
+L 0 256
+T 1 6 fname
+T 0 0 h2e
+T 0 0 h3s
+L 0 8
+T 1 6 cdate
+L 0 8
+T 1 6 mdate
+L 0 30
+T 1 6 author
+T 0 0 h3e
+T 0 0 h4s
+L 0 80
+T 1 6 commen
+T 0 0 h4e
+T 0 0 h5s
+T 0 0 iresta
+T 0 0 nstep
+T 0 0 minit
+T 0 0 mfinl
+T 0 0 mintv
+T 0 0 h5e
+T 0 0 h6s
+T 0 1 dt
+T 0 0 nsbloc
+T 0 0 iensem
+T 0 0 itemp
+T 0 0 ipres
+T 0 1 rcut
+T 0 0 h6e
+T 0 0 h7s
+T 0 0 natom0
+T 0 0 kmol
+T 0 0 nummon
+T 0 0 numthe
+T 0 0 numrsv
+T 0 0 numblk
+T 0 0 h7e
+T 0 0 h8s
+L 0 kmol
+L 1 16
+T 2 6 chamol
+L 0 kmol
+T 1 0 idynam
+L 0 kmol
+T 1 0 nummol0
+L 0 kmol
+T 1 0 numatm
+L 0 kmol
+T 1 0 numbon
+L 0 kmol
+T 1 0 kindat
+T 0 0 h8e
+T 0 0 h9s
+L 0 kmol
+L 1 numatm[i]
+T 2 0 kinatm
+L 0 kmol
+L 1 numatm[i]
+L 2 2
+T 3 6 chatom
+L 0 kmol
+L 1 numatm[i]
+L 2 2
+T 3 6 atmkid
+L 0 kmol
+L 1 numatm[i]
+T 2 1 cmass
+L 0 kmol
+L 1 numatm[i]
+T 2 1 charge
+T 0 0 h9e

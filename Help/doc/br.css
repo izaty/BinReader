@@ -1,0 +1,28 @@
+A:LINK{color:#0000ff;}
+A:VISITED{color:#8000a0;}
+A:HOVER{background-color:#cfcfff}
+H1{color:#000000; background-color:#dfdfff;
+   font-weight:bold; font-size:14pt;
+   border-style:solid;
+   border-width:0pt 0pt 3pt 6pt;
+   border-color:#2f2fbf;
+   padding:3pt;}
+H2{color:#000000; background-color:#dfdfff;
+   font-weight:bold; font-size:11pt;
+   border-style:solid;
+   border-width:0pt 0pt 3pt 6pt;
+   border-color:#7f7fcf;
+   padding:3pt;}
+BODY{color:#000000;background-color:#ffffff;font-size:11pt}
+EM{font-style:normal;color:#ff0000;}
+STRONG{color:#c00080;font-weight:bold;}
+TABLE{font-size:11pt}
+TH{background-color:#afafaf;}
+.note{color:#990000;font-weight:bold}
+.ref{color:#000099;font-weight:bold}
+.sup{color:#007f00;font-weight:bold}
+.eq{font-family:Times;font-style:italic;font-size:11pt}
+.sizell{font-size:18pt;font-weight:bold;}
+.sizel{font-size:14pt;font-weight:bold;}
+.sizem{font-size:11pt;}
+.sizes{font-size:9pt;}

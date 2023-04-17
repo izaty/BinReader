@@ -1,0 +1,158 @@
+<HTML>
+<HEAD>
+<LINK REL="stylesheet" TYPE="text/css" HREF="br.css">
+<TITLE>かんたんスタートガイド</TITLE>
+</HEAD>
+<BODY>
+<h1>かんたんスタートガイド</h1>
+<p>
+<B>「かんたんスタートガイド」</B>では、<B>BinReader</B>の基本操作をすばやく習得していただくために、かんたんな例題を通して、具体的な操作手順を紹介します。「フォーマット定義」から「ソースコード生成」まで、一連の操作の流れを習得することができます。<BR><BR>
+<EM>※試用版では、一部の機能がご利用になれませんので、ご注意ください。</EM>
+</p>
+
+<p>
+<B>■例題■</B><BR><BR>
+
+以下のファイルフォーマットを例に操作手順を紹介します。<BR><BR>
+</p>
+
+<p>
+<IMG src="FormatSample.png"> 
+</p>
+
+<h2>1. BinReaderの起動</h2>
+<ol>
+<li><B>Br.exe</B>をダブルクリックして、<B>BinReader</B>を起動します。<BR><BR>
+    最初に、<B>[プログラミング言語の選択]</B>ダイアログが表示されます。<BR><BR>
+    <IMG src="SelectLangDlg.png"><BR><BR>
+<li>使用するプログラミング言語を選択します。<BR><BR>
+<li><B>[OK]</B>ボタンをクリックします。<BR><BR>
+    <B>BinReader</B>の操作画面が表示されます。<BR><BR>
+    <IMG src="MainWindow80.png"><BR><BR>
+</ol>
+<DIV class="note">注意</DIV>
+試用版では、[ライセンスキーの登録]ダイアログや機能制限のメッセージも表示されます。<BR><BR>
+<h2>2. 画面構成の確認</h2>
+<ol>
+<li>操作画面は、以下のような構成になっているので確認します。<BR><BR>
+    左側の<B>[フォーマットビュー]</B>上でフォーマットを定義すると、右側の<B>[ソースコードビュー]</B>に自動生成されたソースコードが表示されます。<BR><BR>
+<IMG src="MainLayout80.png"><BR><BR>
+</ol>
+
+<h2>3. データ "<B>int group_num</B>" の追加</h2>
+<ol>
+<li><B>＜ルート＞</B>をクリックして <IMG src="BarEditData.png"> をクリックするか、<B>＜ルート＞</B>上で右クリックして<B>[データを追加]</B>を選択します。<BR><BR>
+    <B>[データの追加]</B>ダイアログが表示されます。<BR><BR>
+    <IMG src="AddDataDlg.png"><BR><BR>
+<li><B>[型]</B>リストから、<B>int</B>を選択します。<BR><BR>
+<li><B>[変数名]</B>ボックスに、<B>group_num</B>と入力します。<BR><BR>
+<li><B>[OK]</B>ボタンをクリックします。<BR><BR>
+    <B>[フォーマットビュー]</B>に、データ <B>"int group_num"</B> が追加され、さらに、<B>[ソースコードビュー]</B>にソースコードが自動生成されます。<BR><BR>
+    <IMG src="Add_group_num80.png"><BR><BR>
+</ol>
+
+<h2>4. ループ "i : group_num" の追加</h2>
+<ol>
+<li>データ <B>"int group_num"</B> が選択状態のまま <IMG src="BarEditLoop.png"> をクリックするか、<B>"int group_num"</B> 上で右クリックして<B>[ループを追加]</B>を選択します。<BR><BR>
+      <B>[ループの追加]</B>ダイアログが表示されます。<BR><BR>
+  <IMG src="AddLoopDlg.png"><BR><BR>
+  <li><B>[上限値]</B>ボックスに、<B>group_num</B>と入力します。<BR><BR>
+  <li><B>[OK]</B>ボタンをクリックします。<BR><BR>
+      <B>[フォーマットビュー]</B>に、ループ <B>"i : group_num"</B> が追加され、<B>[ソースコードビュー]</B>も自動更新されます。<BR><BR>
+      <IMG src="Add_L_group_num80.png"><BR><BR>
+</ol>
+<DIV class="note">注意</DIV>
+<B>[上限値]</B>ボックスに指定した値のチェックは行われませんのでご注意ください。<BR><BR>
+
+<h2>5. データ "int gid[i]" の追加</h2>
+<ol>
+<li>ループ <B>"i : group_num"</B> が選択状態のまま <IMG src="BarEditData.png"> をクリックするか、<B>"i : group_num"</B> 上で右クリックして<B>[データを追加]</B>を選択します。<BR><BR>
+    <B>[データの追加]</B>ダイアログが表示されます。<BR><BR>
+    <IMG src="AddDataDlg.png"><BR><BR>
+<li><B>[型]</B>リストから、<B>int</B>を選択します。<BR><BR>
+<li><B>[変数名]</B>ボックスに、<B>gid</B>と入力します。<BR><BR>
+<li><B>[OK]</B>ボタンをクリックします。<BR><BR>
+    <B>[フォーマットビュー]</B>のループ <B>"i : group_num"</B> 配下に、データ <B>"int gid[i]"</B> が追加され、さらに、<B>[ソースコードビュー]</B>も自動更新されます。<BR><BR>
+    <IMG src="Add_gid80.png"><BR><BR>
+</ol>
+
+<h2>6. ループ "j : 20" の追加</h2>
+<ol>
+   <li>データ <B>"int gid[i]"</B> が選択状態のまま <IMG src="BarEditLoop.png"> をクリックするか、 <B>"int gid[i]"</B> 上で右クリックして<B>[ループを追加]</B>を選択します。<BR><BR>
+   <B>[ループの追加]</B>ダイアログが表示されます。<BR><BR>
+   <IMG src="AddLoopDlg.png"><BR><BR>
+   <li><B>[上限値]</B>ボックスに、<B>20</B>と入力します。<BR><BR>
+   <li><B>[OK]</B>ボタンをクリックします。<BR><BR>
+      <B>[フォーマットビュー]</B>のループ <B>"i : group_num"</B> 配下に、ループ <B>"j : 20"</B> が追加され、<B>[ソースコードビュー]</B>も自動更新されます。<BR><BR>
+      <IMG src="Add_L_20_80.png"><BR><BR>
+</ol>
+<DIV class="note">注意</DIV>
+<B>[上限値]</B>ボックスに指定した値のチェックは行われませんのでご注意ください。<BR><BR>
+
+<h2>7. データ "<B>double value[i][j]</B>" の追加</h2>
+<ol>
+<li>ループ <B>"j : 20"</B> が選択状態のまま <IMG src="BarEditData.png"> をクリックするか、<B>"j : 20"</B> 上で右クリックして<B>[データを追加]</B>を選択します。<BR><BR>
+    <B>[データの追加]</B>ダイアログが表示されます。<BR><BR>
+    <IMG src="AddDataDlg.png"><BR><BR>
+<li><B>[型]</B>リストから、<B>double</B>を選択します。<BR><BR>
+<li><B>[変数名]</B>ボックスに、<B>value</B>と入力します。<BR><BR>
+<li><B>[OK]</B>ボタンをクリックします。<BR><BR>
+    <B>[フォーマットビュー]</B>のループ <B>"j : 20"</B> 配下に、データ <B>"value[i][j]"</B> が追加され、さらに、<B>[ソースコードビュー]</B>も自動更新されます。<BR><BR>
+    <IMG src="Add_value80.png"><BR><BR>
+</ol>
+
+<h2>8. データ "<B>int flag</B>" の追加</h2>
+<ol>
+<li>データ <B>"double : value[i][j]"</B> が選択状態のまま <IMG src="BarEditData.png"> をクリックするか、<B>"double : value[i][j]"</B> 上で右クリックして<B>[データを追加]</B>を選択します。<BR><BR>
+    <B>[データの追加]</B>ダイアログが表示されます。<BR><BR>
+    <IMG src="AddDataDlg.png"><BR><BR>
+<li><B>[型]</B>リストから、<B>int</B>を選択します。<BR><BR>
+<li><B>[変数名]</B>ボックスに、<B>flag</B>と入力します。<BR><BR>
+<li><B>[OK]</B>ボタンをクリックします。<BR><BR>
+    すると、変数はループ <B>"j : 20"</B> 配下に登録されてしまうので、ループの外に出す必要があります。<BR><BR>
+    <IMG src="Add_flag80.png"><BR><BR>
+<li>データ <B>"int : flag[i][j]"</B> が選択状態のまま <IMG src="BarEditLeft.png"> をクリックするか、<B>"int : flag[i][j]"</B> 上で右クリックして<B>[左へ]</B>を選択します。<BR><BR>
+    すると、変数は一つ上の階層に移動しますが、まだループ <B>"i : group_num"</B> 配下ですので、さらにループの外に出す必要があります。<BR><BR>
+    <IMG src="Add_left80.png"><BR><BR>
+<li>データ <B>"int : flag[i]"</B> が選択状態のまま <IMG src="BarEditLeft.png"> をクリックするか、<B>"int : flag[i]"</B> 上で右クリックして<B>[左へ]</B>を選択します。<BR><BR>
+    すると、変数は一つ上の階層に移動して、完全にループの外に出ます。<B>[ソースコードビュー]</B>も自動更新されます。<BR><BR>
+    <IMG src="Add_complete80.png"><BR><BR>
+    以上で、フォーマットの定義は完了です。<BR><BR>
+</ol>
+
+<h2>9. ソースコードの出力</h2>
+<p><B><U>ファイルに出力する方法</U></B></p>
+<ol>
+<li><IMG src="BarSrcOutput.png"> をクリックするか、<B>[ソース]</B>メニューの<B>[ソースの出力]</B>を選択します。<BR><BR>
+    <B>[名前を付けて保存]</B>ダイアログが表示されます。<BR><BR>
+    <IMG src="SrcOutputDlg90.png"><BR><BR>
+<li>ファイル名を指定して<B>[保存]</B>ボタンをクリックします。<BR><BR>
+    <B>[ソースコードビュー]</B>の内容がそのままファイルに保存されます。<BR><BR>
+</ol>
+<p><B><U>クリップボードにコピーする方法</U></B></p>
+<ol>
+<li><B>[ソースコードビュー]</B>上で右クリックして、[すべて選択]を選択します。<BR><BR>
+<li><B>[ソースコードビュー]</B>上で右クリックして、[コピー]を選択します。<BR><BR>
+    <B>[ソースコードビュー]</B>の内容がそのままクリップボードにコピーされます。<BR><BR>
+</ol>
+<DIV class="note">注意</DIV>
+試用版では本機能はご利用になれません。<BR><BR>
+
+
+<h2>10. 設定の保存</h2>
+<ol>
+<li><IMG src="BarFileSave.png"> をクリックするか、<B>[ファイル]</B>メニューの<B>[上書き保存]</B>または<B>[名前を付けて保存]</B>を選択します。<BR><BR>
+    <B>[名前を付けて保存]</B>ダイアログが表示されます。<BR><BR>
+    <IMG src="FileSaveDlg90.png"><BR><BR>
+<li>ファイル名を入力して<B>[保存]</B>ボタンをクリックします。<BR><BR>
+    定義したフォーマットが指定したファイルに保存されます。<BR><BR>
+</ol>
+<DIV class="sup">補足</DIV>
+保存した設定を再度取り込むには、<B>[ファイル]</B>メニューの<B>[開く]</B>を選択してファイルを開きます。<BR><BR>
+<DIV class="note">注意</DIV>
+試用版では本機能はご利用になれません。<BR><BR>
+
+<HR>
+
+</BODY>
+</HTML>
