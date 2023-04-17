@@ -1,4 +1,22 @@
-# BinReader
+# What is BinReader?
 
-This program is called "BinReader" and it is able to generate source code to read binary files by specifying their format.
-Currently, it is only available for Windows and has been developed using Visual C++/MFC.
+BinReader is a Windows program that allows you to generate source code to read binary files by specifying their format.
+
+# What languages are supported?
+
+Source code can be genarated in the following languages:
+
+- C
+- C++
+- C#
+- Java
+- PHP
+
+## About Endian transformation?
+
+If you need to read binary files in big endian format on a little endian machine and vice versa,
+you need to perform Endian transformation. It can be implemeted, if necessary.
+
+# OS
+
+It has been developed with Visual C++/MFC so is available only on Windows.
